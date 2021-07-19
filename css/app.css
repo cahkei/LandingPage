@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #7fd142;
+    font-family: 'Rubik', serif;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.header .wave {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+}
+
+.header h1 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 56px;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    letter-spacing: -2px;
+    z-index: 20;
+}
+
+.header h1 img {
+    border-radius: 100%;
+    width: 60px;
+}
+
+.hero {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+    position: relative;
+    width: 1200px;
+    z-index: 20;
+}
+
+.hero main h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 45px;
+    width: 500px;
+}
+
+.hero main > p {
+    color: #fff;
+    font-size: 24px;
+    padding: 40px 0;
+}
+
+.hero main .action {
+    display: flex;
+    gap: 20px;
+}
+
+.hero main .action input {
+    background: #7fd142;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 16px;
+    outline: 0;
+    flex-grow: 1;
+}
+
+.hero main .action input::placeholder {
+    color: #fff;
+}
+
+.hero main .action button {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #7fd142; 
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 24px;
+}
+
+.hero main .action button:hover {
+    opacity: 75%;
+}
+
+.hero main .alert {
+    background:#63a82d;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+    color: #ddfdc5;
+    padding: 10px 0;
+    visibility: hidden;
+}
+
+.hero .plant {
+    position: relative;
+    margin-top: 50px;
+    max-height: 70vh;
+}
+
+.hero .plant img:nth-child(1) {
+    background: #333;
+    border: 5px solid #333;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 70%;
+    transform: rotate(5deg);
+}
+
+.hero .plant img:nth-child(2) {
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    top: -200px;
+    left: 400px;
+    width: 50%;
+    transform: rotate(-5deg);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    gap: 10px;
+    z-index: 20;
+}
+
+footer p {
+    color: #fff;
+    letter-spacing: 1.25px;
+    font-size:14px;
+}
+
+footer p span {
+    color: #caffb1;
+    font-size: 16px;
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+footer ul li,
+footer ul li a {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    opacity: 1;
+}
+
+footer ul li a:hover {
+    opacity: .75;
+}
+
+footer ul li a svg {
+    fill: currentColor;
+}
+
+@media (max-width: 375px) {
+    .header {
+        background: #333;
+    }
+
+    .header h1 {
+        font-size: 46px;
+    }
+
+    .header .wave {
+        top: 100px;
+    }
+
+    .hero {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero main {
+        padding: 0 14px;
+    }
+
+    .hero main h2 {
+        font-size: 40px;
+        width: auto;
+        text-align: center;
+    }
+
+    .hero main p {
+        text-align: center;
+    }
+
+    .hero main .action {
+        flex-direction: column;
+    }
+
+    .hero main .action button {
+        padding: 10px 24px;
+    }
+
+    .hero .plant {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-height: initial;
+    }
+
+    .hero .plant img:nth-child(1) {
+        border-radius: 0;
+        border: none;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    .hero .plant img:nth-child(2) {
+        border-radius: 0;
+        border: none;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    .hero main .alert {
+        font-size: 14px;
+    }
+}
